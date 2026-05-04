@@ -1,603 +1,768 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TADIN — Proyecto 1 · Equipo 6</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Point — Proyecto 2 · Equipo N° 6</title>
+
+    <!-- Tipografías: Plus Jakarta Sans (cuerpo) + Fraunces (acentos editoriales) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="deck" id="deck">
 
-<!-- ============ S1 CARÁTULA ============ -->
-<section class="slide active" id="s1">
-  <div class="inner">
-    <div class="eyebrow"><span></span><p class="tag">Primera Presentación de Proyecto · TADIN</p></div>
-    <h1 class="h1">Proyecto 1<br><em>TADIN</em></h1>
-    <p class="sub">Digitalización de procesos para una empresa de pintura electrostática.</p>
-    <div class="meta-row">
-      <div><div class="ml">Equipo</div><div class="mv">N° 6</div></div>
-      <div><div class="ml">Curso</div><div class="mv">7mo Informática B</div></div>
-      <div><div class="ml">Fecha</div><div class="mv">Mayo 2026</div></div>
-    </div>
-    <div class="team">
-      <div class="tm"><div class="av">MN</div><div><div class="tn">Mía Niello</div><div class="tr">PM / Frontend</div></div></div>
-      <div class="tm"><div class="av">CQ</div><div><div class="tn">Catalina Quintana</div><div class="tr">Frontend · UX/UI</div></div></div>
-      <div class="tm"><div class="av">TB</div><div><div class="tn">Tatiana Bravo</div><div class="tr">Backend</div></div></div>
-      <div class="tm"><div class="av">NP</div><div><div class="tn">Nicolás Perri</div><div class="tr">DB · Backend</div></div></div>
-      <div class="tm"><div class="av">MC</div><div><div class="tn">Milagros Camino</div><div class="tr">Infraestructura · Seguridad</div></div></div>
-    </div>
-  </div>
-</section>
+    <!-- ========================================================= -->
+    <!-- NAVEGACIÓN LATERAL (puntos indicadores de slide)            -->
+    <!-- ========================================================= -->
+    <nav class="slide-nav" aria-label="Navegación de slides">
+        <a href="#slide-1"  class="nav-dot" data-label="Carátula"></a>
+        <a href="#slide-2"  class="nav-dot" data-label="Caso de Uso"></a>
+        <a href="#slide-3"  class="nav-dot" data-label="Causas"></a>
+        <a href="#slide-4"  class="nav-dot" data-label="Sistema"></a>
+        <a href="#slide-5"  class="nav-dot" data-label="Req. Funcionales"></a>
+        <a href="#slide-6"  class="nav-dot" data-label="RNF + Alcance"></a>
+        <a href="#slide-7"  class="nav-dot" data-label="OKRs"></a>
+        <a href="#slide-8"  class="nav-dot" data-label="Equipo"></a>
+        <a href="#slide-9"  class="nav-dot" data-label="Presupuesto"></a>
+        <a href="#slide-10" class="nav-dot" data-label="Cronograma"></a>
+        <a href="#slide-11" class="nav-dot" data-label="Próximos pasos"></a>
+        <a href="#slide-12" class="nav-dot" data-label="Cierre"></a>
+    </nav>
 
-<!-- ============ S2 CASO DE USO ============ -->
-<section class="slide" id="s2">
-  <div class="inner">
-    <p class="tag">Caso de uso</p>
-    <h2 class="h2">Análisis de Requerimientos</h2>
-    <div class="strike"></div>
-    <div class="grid">
-      <div class="profile">
-        <p class="ptag">Cliente</p>
-        <div class="bav">PE</div>
-        <div class="pn">Empresa de Pintura Electrostática</div>
-        <div class="pr">Servicios industriales de pintura electrostática</div>
-        <div class="pi">
-          <p class="pl">Contacto del relevamiento</p>
-          <div class="prow">Silvana Bravo — empleada administrativa</div>
-          <p class="pl" style="margin-top:8px">Estructura</p>
-          <div class="prow">10 empleados directos</div>
-          <div class="prow">Equipo externo: Contabilidad, Finanzas, Sistemas, Higiene y Seguridad</div>
-          <p class="pl" style="margin-top:8px">Equipamiento</p>
-          <div class="prow">PC de escritorio + celulares Samsung</div>
-          <p class="pl" style="margin-top:8px">Target comercial</p>
-          <div class="prow">Industrias petroleras, mineras y telefónicas</div>
+
+    <!-- ========================================================= -->
+    <!-- Slide 1 · Carátula                                          -->
+    <!-- ========================================================= -->
+    <section class="slide slide--cover" id="slide-1">
+        <div class="cover__decor cover__decor--circle"></div>
+        <div class="cover__decor cover__decor--line"></div>
+
+        <div class="cover__content">
+            <span class="cover__eyebrow">Proyecto 2 · Equipo N° 6</span>
+
+            <h1 class="cover__title">
+                Training<br>
+                <em>Point</em>
+            </h1>
+
+            <p class="cover__subtitle">
+                Web App de gestión integral para entrenadores físicos
+            </p>
+
+            <div class="cover__meta">
+                <div class="meta-item">
+                    <span class="meta-item__label">Curso</span>
+                    <span class="meta-item__value">7mo Informática B</span>
+                </div>
+                <div class="meta-item">
+                    <span class="meta-item__label">Fecha</span>
+                    <span class="meta-item__value">Mayo 2026</span>
+                </div>
+            </div>
+
+            <div class="cover__team">
+                <span class="cover__team-label">Integrantes</span>
+                <ul class="cover__team-list">
+                    <li>Bravo Tatiana</li>
+                    <li>Camino Milagros</li>
+                    <li>Niello Mía</li>
+                    <li>Perri Nicolás</li>
+                    <li>Quintana Catalina</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <div class="syms">
-        <div class="sym"><div class="st">Falta de especialización de nicho</div><p class="sd">Gran parte de los clientes son minoristas, dificultando la consolidación en el nicho industrial. La empresa no tiene presencia digital profesional (redes sociales desalineadas, sin sitio web).</p></div>
-        <div class="sym"><div class="st">Carga operativa manual</div><p class="sd">Cada consulta debe responderse individualmente de cero. Sin respuestas automáticas ni software intermediario entre el cliente y la empresa.</p></div>
-        <div class="sym"><div class="st">Sin estadísticas de clientes</div><p class="sd">No hay registro de cuántas personas consultan, continúan con la compra o quedan insatisfechas. Los datos de clientes potenciales se "escapan" por falta de base de datos.</p></div>
-        <div class="sym"><div class="st">Control de personal obsoleto</div><p class="sd">Ingreso y egreso sin automatización. Horas trabajadas y sueldos contados manualmente. Pérdida de tiempo administrativo y margen de error.</p></div>
-        <div class="sym"><div class="st">Transferencia de contacto analógica</div><p class="sd">Datos de contacto transferidos de forma manual. La empresa busca proyectar innovación y eficiencia en la conectividad con sus clientes.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- ============ S3 DEL SÍNTOMA A LA CAUSA ============ -->
-<section class="slide" id="s3">
-  <div class="inner">
-    <p class="tag">Diagnóstico</p>
-    <h2 class="h2">Del Síntoma a la Causa Real</h2>
-    <div class="strike"></div>
-    <div class="legend">
-      <div class="lg-item"><span class="lg-dot" style="background:var(--rust)"></span>Síntoma — lo que dice la empresa</div>
-      <div class="lg-item"><span class="lg-dot" style="background:var(--mid)"></span>Causa — lo que realmente sucede</div>
-      <div class="lg-item"><span class="lg-dot" style="background:var(--amber)"></span>Solución técnica propuesta</div>
-    </div>
-    <div class="cgrid">
+        <div class="cover__index">01 / 12</div>
+    </section>
 
-      <div class="cscard">
-        <div class="cs-head">
-          <div class="cs-mod">Sitio Web Institucional</div>
-          <span class="cs-code">ISW01</span>
+
+    <!-- ========================================================= -->
+    <!-- Slide 2 · Caso de Uso                                       -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-2">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">02</span>
+                <h2 class="slide__title">Caso de Uso</h2>
+                <p class="slide__lead">Conociendo a Damián y el desafío de gestionar su negocio en crecimiento.</p>
+            </header>
+
+            <div class="usecase">
+                <!-- Tarjeta de perfil -->
+                <article class="profile-card">
+                    <div class="profile-card__avatar" aria-hidden="true">
+                        <span>D</span>
+                    </div>
+                    <div class="profile-card__info">
+                        <h3 class="profile-card__name">Damián</h3>
+                        <p class="profile-card__role">Entrenador físico · 32 años</p>
+                        <ul class="profile-card__stats">
+                            <li><strong>25</strong><span>alumnos activos</span></li>
+                            <li><strong>1</strong><span>box unipersonal</span></li>
+                            <li><strong>100%</strong><span>gestión manual</span></li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Detalles del caso -->
+                <div class="usecase__details">
+                    <div class="info-block">
+                        <span class="info-block__label">Técnica de relevamiento</span>
+                        <p class="info-block__text">Entrevistas Estructuradas <em>(Pirámide)</em></p>
+                    </div>
+
+                    <div class="info-block">
+                        <span class="info-block__label">Problema central</span>
+                        <p class="info-block__text">Gestión manual y unipersonal de 25 alumnos: planificación de WODs, reservas, cobros y seguimiento dispersos en herramientas aisladas.</p>
+                    </div>
+
+                    <blockquote class="usecase__quote">
+                        <span class="usecase__quote-mark">“</span>
+                        <p>Mi negocio está creciendo, pero mi forma de gestionarlo quedó en la edad de piedra. Siento que trabajo para el sistema y no el sistema para mí.</p>
+                        <cite>— Damián, declaración del comprador</cite>
+                    </blockquote>
+                </div>
+            </div>
         </div>
-        <div class="cs-block sin">
-          <div class="cs-label">Síntoma</div>
-          <div class="cs-text"><em>"Queremos enfocarnos en el nicho de industrias petroleras, mineras, telefónicas. Tenemos muchos clientes con necesidades minoristas."</em></div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 3 · Causas                                            -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-3">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">03</span>
+                <h2 class="slide__title">Del síntoma a la causa</h2>
+                <p class="slide__lead">Detectamos cuatro problemas recurrentes y trazamos la línea entre lo que Damián siente y lo que el sistema necesita resolver.</p>
+            </header>
+
+            <div class="causes-grid">
+
+                <!-- Causa 1: Planificación -->
+                <article class="cause-card">
+                    <header class="cause-card__head">
+                        <span class="cause-card__tag">Problema</span>
+                        <h3 class="cause-card__title">Planificación</h3>
+                    </header>
+                    <blockquote class="cause-card__quote">
+                        “Armar las rutinas me quita tiempo de descanso; es un proceso repetitivo que ya no puedo sostener.”
+                    </blockquote>
+                    <div class="cause-card__row">
+                        <span class="cause-card__label">Causa real</span>
+                        <p>Ausencia de una base de datos centralizada de ejercicios.</p>
+                    </div>
+                    <div class="cause-card__row cause-card__row--solution">
+                        <span class="cause-card__label">Solución web</span>
+                        <p>Gestor de WODs con biblioteca digital.</p>
+                    </div>
+                </article>
+
+                <!-- Causa 2: Logística -->
+                <article class="cause-card">
+                    <header class="cause-card__head">
+                        <span class="cause-card__tag">Problema</span>
+                        <h3 class="cause-card__title">Logística</h3>
+                    </header>
+                    <blockquote class="cause-card__quote">
+                        “A veces vienen 10 alumnos y tengo material para 6; me genera una incertidumbre que me agota.”
+                    </blockquote>
+                    <div class="cause-card__row">
+                        <span class="cause-card__label">Causa real</span>
+                        <p>Falta de validación de stock en tiempo real en las reservas.</p>
+                    </div>
+                    <div class="cause-card__row cause-card__row--solution">
+                        <span class="cause-card__label">Solución web</span>
+                        <p>Módulo de reservas con límite de vacantes.</p>
+                    </div>
+                </article>
+
+                <!-- Causa 3: Administración -->
+                <article class="cause-card">
+                    <header class="cause-card__head">
+                        <span class="cause-card__tag">Problema</span>
+                        <h3 class="cause-card__title">Administración</h3>
+                    </header>
+                    <blockquote class="cause-card__quote">
+                        “No sé quién me debe hasta que reviso el historial de chats; estoy perdiendo dinero por falta de control.”
+                    </blockquote>
+                    <div class="cause-card__row">
+                        <span class="cause-card__label">Causa real</span>
+                        <p>Uso de herramientas aisladas (Notas/WhatsApp) propensas al error.</p>
+                    </div>
+                    <div class="cause-card__row cause-card__row--solution">
+                        <span class="cause-card__label">Solución web</span>
+                        <p>Dashboard contable y seguimiento de abonos.</p>
+                    </div>
+                </article>
+
+                <!-- Causa 4: Fidelización -->
+                <article class="cause-card">
+                    <header class="cause-card__head">
+                        <span class="cause-card__tag">Problema</span>
+                        <h3 class="cause-card__title">Fidelización</h3>
+                    </header>
+                    <blockquote class="cause-card__quote">
+                        “Los alumnos no tienen visibilidad de sus propios datos históricos; eso afecta su motivación.”
+                    </blockquote>
+                    <div class="cause-card__row">
+                        <span class="cause-card__label">Causa real</span>
+                        <p>Falta de acceso del alumno a su progreso y créditos.</p>
+                    </div>
+                    <div class="cause-card__row cause-card__row--solution">
+                        <span class="cause-card__label">Solución web</span>
+                        <p>Portal de autogestión y registro de marcas (PRs).</p>
+                    </div>
+                </article>
+
+            </div>
         </div>
-        <div class="cs-block cau">
-          <div class="cs-label">Causa Real</div>
-          <div class="cs-text">La empresa no tiene presencia digital que proyecte una imagen profesional acorde a su enfoque industrial. Sus redes sociales están desalineadas y no posee un sitio web propio.</div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 4 · Sistema (Hardware + Software) y Línea de Base     -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-4">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">04</span>
+                <h2 class="slide__title">Sistema y Línea de Base</h2>
+                <p class="slide__lead">Una <strong>Web App SaaS</strong> integral diseñada para dos perfiles, sostenida sobre datos concretos del estado actual del negocio.</p>
+            </header>
+
+            <div class="system-layout">
+
+                <!-- Línea de base: 3 KPIs del estado actual -->
+                <div class="system-baseline">
+                    <h3 class="block-heading">Línea de base · Estado actual</h3>
+                    <div class="baseline-grid">
+                        <div class="baseline-card">
+                            <span class="baseline-card__value">1 h<small>/día</small></span>
+                            <span class="baseline-card__label">Trabajo administrativo extra en planificación técnica</span>
+                        </div>
+                        <div class="baseline-card">
+                            <span class="baseline-card__value">15%</span>
+                            <span class="baseline-card__label">Mora proyectada por falta de avisos automáticos</span>
+                        </div>
+                        <div class="baseline-card">
+                            <span class="baseline-card__value">100%</span>
+                            <span class="baseline-card__label">Operatividad dependiente de mensajes manuales</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Perfiles de usuario -->
+                <div class="system-users">
+                    <h3 class="block-heading">Perfiles de usuario</h3>
+                    <div class="users-grid">
+
+                        <article class="user-card user-card--admin">
+                            <span class="user-card__badge">SaaS · Web App</span>
+                            <h4 class="user-card__title">Administrador</h4>
+                            <p class="user-card__sub">Damián · Entrenador</p>
+                            <p class="user-card__desc">
+                                Gestión total de la biblioteca de WODs, control de deudores
+                                y configuración de cupos por clase.
+                            </p>
+                        </article>
+
+                        <article class="user-card user-card--student">
+                            <span class="user-card__badge">SaaS · Web App</span>
+                            <h4 class="user-card__title">Alumno</h4>
+                            <p class="user-card__sub">Usuario final</p>
+                            <p class="user-card__desc">
+                                Interfaz para reservar turnos, consultar el WOD del día
+                                y cargar sus propios récords personales (PRs).
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="cs-block sol">
-          <div class="cs-label">Solución Técnica</div>
-          <div class="cs-text">Construir un sitio web orientado específicamente al sector industrial, detallando procesos y normativas. Esto actúa como un "filtro" para clientes minoristas fuera del nicho objetivo.</div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 5 · Requerimientos Funcionales                        -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-5">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">05</span>
+                <h2 class="slide__title">Requerimientos Funcionales</h2>
+                <p class="slide__lead">Cuatro módulos núcleo que transforman la operatoria diaria de Damián y la experiencia del alumno.</p>
+            </header>
+
+            <div class="rf-grid">
+
+                <article class="rf-card">
+                    <span class="rf-card__code">RF<strong>01</strong></span>
+                    <h3 class="rf-card__title">Gestor de Entrenamientos</h3>
+                    <p class="rf-card__desc">Crear WODs en menos de 15 minutos usando la biblioteca de ejercicios.</p>
+                </article>
+
+                <article class="rf-card">
+                    <span class="rf-card__code">RF<strong>02</strong></span>
+                    <h3 class="rf-card__title">Módulo de Reservas</h3>
+                    <p class="rf-card__desc">Los alumnos confirman asistencia vía web y el sistema bloquea el cupo automáticamente.</p>
+                </article>
+
+                <article class="rf-card">
+                    <span class="rf-card__code">RF<strong>03</strong></span>
+                    <h3 class="rf-card__title">Dashboard Contable</h3>
+                    <p class="rf-card__desc">Seguimiento automático de ingresos y vencimientos de membresía.</p>
+                </article>
+
+                <article class="rf-card">
+                    <span class="rf-card__code">RF<strong>04</strong></span>
+                    <h3 class="rf-card__title">Portal del Alumno</h3>
+                    <p class="rf-card__desc">Autogestión de turnos, consulta de créditos y registro de marcas personales.</p>
+                </article>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="cscard">
-        <div class="cs-head">
-          <div class="cs-mod">Respuesta Automática y Estadística de Datos</div>
-          <span class="cs-code">ISW02 · RF03</span>
+
+    <!-- ========================================================= -->
+    <!-- Slide 6 · Requerimientos No Funcionales + Alcance           -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-6">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">06</span>
+                <h2 class="slide__title">Calidad y Alcance</h2>
+                <p class="slide__lead">Atributos no funcionales que aseguran la calidad del producto y los límites claros de su primera versión.</p>
+            </header>
+
+            <div class="rnf-layout">
+
+                <!-- Requerimientos No Funcionales -->
+                <div class="rnf-block">
+                    <h3 class="block-heading">Requerimientos No Funcionales</h3>
+                    <div class="rnf-list">
+
+                        <div class="rnf-item">
+                            <span class="rnf-item__index">01</span>
+                            <div>
+                                <h4>Responsividad</h4>
+                                <p>Acceso fluido desde celulares (alumnos) y PC (entrenador).</p>
+                            </div>
+                        </div>
+
+                        <div class="rnf-item">
+                            <span class="rnf-item__index">02</span>
+                            <div>
+                                <h4>Accesibilidad</h4>
+                                <p>Interfaz simple y clara para el rango etario 40-50 años.</p>
+                            </div>
+                        </div>
+
+                        <div class="rnf-item">
+                            <span class="rnf-item__index">03</span>
+                            <div>
+                                <h4>Seguridad</h4>
+                                <p>Resguardo de datos históricos de los alumnos en la nube.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Alcance -->
+                <div class="rnf-scope">
+                    <h3 class="block-heading">Alcance del sistema</h3>
+                    <ul class="scope-list">
+                        <li>
+                            <span class="scope-list__bullet">→</span>
+                            Desarrollo de una Web App integral <strong>(SaaS)</strong>.
+                        </li>
+                        <li>
+                            <span class="scope-list__bullet">→</span>
+                            Gestión administrativa exclusiva para un único box / entrenador.
+                        </li>
+                        <li>
+                            <span class="scope-list__bullet">→</span>
+                            Validación manual de abonos: el entrenador confirma el ingreso del dinero.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
-        <div class="cs-block sin">
-          <div class="cs-label">Síntoma</div>
-          <div class="cs-text"><em>"Debo contestar cada consulta individualmente, de cero. No sabemos cuánta gente nos consulta ni por qué algunos no compran. Se nos 'escapan' datos de clientes que podrían volver a elegirnos."</em></div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 7 · OKRs                                              -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-7">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">07</span>
+                <h2 class="slide__title">OKRs del Proyecto</h2>
+                <p class="slide__lead">Métricas estratégicas que definen el éxito de Training Point en la operación real de Damián.</p>
+            </header>
+
+            <div class="okr-grid">
+
+                <article class="okr-card">
+                    <span class="okr-card__metric">75<small>%</small></span>
+                    <h3 class="okr-card__title">Ahorro de tiempo</h3>
+                    <p class="okr-card__desc">Reducir el tiempo de planificación semanal de <strong>5 horas a 1 hora</strong>.</p>
+                </article>
+
+                <article class="okr-card">
+                    <span class="okr-card__metric">100<small>%</small></span>
+                    <h3 class="okr-card__title">Cupos validados</h3>
+                    <p class="okr-card__desc">Garantizar que <strong>todas las clases</strong> tengan los cupos validados según el material físico.</p>
+                </article>
+
+                <article class="okr-card">
+                    <span class="okr-card__metric">0<small>%</small></span>
+                    <h3 class="okr-card__title">Olvido de cobros</h3>
+                    <p class="okr-card__desc">Reducir a <strong>cero</strong> el olvido de cobros mediante el sistema de alertas automáticas.</p>
+                </article>
+
+            </div>
         </div>
-        <div class="cs-block cau">
-          <div class="cs-label">Causa Real</div>
-          <div class="cs-text">No se han implementado capas de software que actúen como intermediarios entre el cliente y la empresa. Tampoco hay una base de datos de clientes, lo que genera carga operativa innecesaria.</div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 8 · Equipo de trabajo                                 -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-8">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">08</span>
+                <h2 class="slide__title">El Equipo de Trabajo</h2>
+                <p class="slide__lead">Cinco roles complementarios cubriendo desde la coordinación general hasta el diseño visual y la lógica del servidor.</p>
+            </header>
+
+            <div class="team-grid">
+
+                <article class="team-card team-card--lead">
+                    <div class="team-card__avatar"><span>NM</span></div>
+                    <h3 class="team-card__name">Niello Mía</h3>
+                    <span class="team-card__role">Project Manager</span>
+                    <p class="team-card__desc">
+                        Encargada de organizar el proyecto, definir objetivos y coordinar
+                        al equipo para cumplir con los tiempos y requerimientos.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-card__avatar"><span>PN</span></div>
+                    <h3 class="team-card__name">Perri Nicolás</h3>
+                    <span class="team-card__role">Backend &amp; Base de Datos</span>
+                    <p class="team-card__desc">
+                        Responsable de la lógica del sistema, la gestión de datos
+                        y el funcionamiento interno de la aplicación.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-card__avatar"><span>BT</span></div>
+                    <h3 class="team-card__name">Bravo Tatiana</h3>
+                    <span class="team-card__role">Backend Developer</span>
+                    <p class="team-card__desc">
+                        Encargada de desarrollar y mantener la lógica del servidor
+                        y las funcionalidades principales del sistema.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-card__avatar"><span>CM</span></div>
+                    <h3 class="team-card__name">Camino Milagros</h3>
+                    <span class="team-card__role">Frontend Developer</span>
+                    <p class="team-card__desc">
+                        Responsable de la construcción de la interfaz visual
+                        y la interacción del usuario con la aplicación.
+                    </p>
+                </article>
+
+                <article class="team-card">
+                    <div class="team-card__avatar"><span>QC</span></div>
+                    <h3 class="team-card__name">Quintana Catalina</h3>
+                    <span class="team-card__role">UX Designer &amp; Frontend</span>
+                    <p class="team-card__desc">
+                        Encargada de la experiencia de usuario y del diseño visual,
+                        asegurando que la app sea intuitiva y atractiva.
+                    </p>
+                </article>
+
+            </div>
         </div>
-        <div class="cs-block sol">
-          <div class="cs-label">Solución Técnica</div>
-          <div class="cs-text">Al recibir una consulta, se envía un mensaje automático junto a un enlace a un formulario web. Los datos van automáticamente a una hoja de cálculo / base de datos vinculada (nombre, mail y empresa).</div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 9 · Presupuesto + Tech Stack                          -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-9">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">09</span>
+                <h2 class="slide__title">Presupuesto y Tech Stack</h2>
+                <p class="slide__lead">Categorías de inversión y el stack tecnológico elegido para sostener performance, escalabilidad y experiencia.</p>
+            </header>
+
+            <div class="budget-layout">
+
+                <!-- Categorías de presupuesto -->
+                <div class="budget-block">
+                    <h3 class="block-heading">Categorías de inversión</h3>
+                    <ul class="budget-list">
+                        <li>
+                            <span class="budget-list__num">01</span>
+                            <div>
+                                <strong>Diseño UX/UI</strong>
+                                <p>Investigación, prototipado y sistema de diseño.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="budget-list__num">02</span>
+                            <div>
+                                <strong>Desarrollo Fullstack</strong>
+                                <p>Frontend, backend, base de datos e integraciones.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="budget-list__num">03</span>
+                            <div>
+                                <strong>Hosting Cloud</strong>
+                                <p>Infraestructura escalable para soporte SaaS.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="budget-list__num">04</span>
+                            <div>
+                                <strong>Licencias de servidores</strong>
+                                <p>Servicios y licencias necesarias para operación.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div class="stack-block">
+                    <h3 class="block-heading">Tech Stack</h3>
+                    <div class="stack-grid">
+
+                        <article class="stack-card">
+                            <span class="stack-card__layer">Frontend</span>
+                            <h4 class="stack-card__name">React.js</h4>
+                            <p class="stack-card__desc">Garantiza velocidad y dinamismo en la interfaz del usuario.</p>
+                        </article>
+
+                        <article class="stack-card">
+                            <span class="stack-card__layer">Backend</span>
+                            <h4 class="stack-card__name">Node.js</h4>
+                            <p class="stack-card__desc">Alta concurrencia para el módulo crítico de reservas.</p>
+                        </article>
+
+                        <article class="stack-card">
+                            <span class="stack-card__layer">Database</span>
+                            <h4 class="stack-card__name">MongoDB</h4>
+                            <p class="stack-card__desc">Ideal para bibliotecas de ejercicios y estructuras de WODs.</p>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="cscard">
-        <div class="cs-head">
-          <div class="cs-mod">Reloj Biométrico y Contabilización del Sueldo</div>
-          <span class="cs-code">RHW02</span>
+
+    <!-- ========================================================= -->
+    <!-- Slide 10 · Cronograma (Gantt visual simple)                 -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-10">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">10</span>
+                <h2 class="slide__title">Cronograma del Proyecto</h2>
+                <p class="slide__lead">Plan de trabajo distribuido en cinco fases a lo largo de seis meses, desde el relevamiento hasta el lanzamiento oficial.</p>
+            </header>
+
+            <div class="gantt">
+
+                <!-- Encabezado de meses -->
+                <div class="gantt__header">
+                    <div class="gantt__phase-col">Fase</div>
+                    <div class="gantt__months">
+                        <span>Mes 1</span>
+                        <span>Mes 2</span>
+                        <span>Mes 3</span>
+                        <span>Mes 4</span>
+                        <span>Mes 5</span>
+                        <span>Mes 6</span>
+                    </div>
+                </div>
+
+                <!-- Fila: Fase 1 -->
+                <div class="gantt__row">
+                    <div class="gantt__phase-col">
+                        <strong>Fase 1</strong>
+                        <span>Relevamiento, diagnóstico y validación con Damián.</span>
+                    </div>
+                    <div class="gantt__track">
+                        <div class="gantt__bar" style="--start:1; --span:1;">
+                            <span>Relevamiento</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila: Fase 2 -->
+                <div class="gantt__row">
+                    <div class="gantt__phase-col">
+                        <strong>Fase 2</strong>
+                        <span>Diseño de la arquitectura de datos y prototipado UX/UI.</span>
+                    </div>
+                    <div class="gantt__track">
+                        <div class="gantt__bar gantt__bar--alt" style="--start:2; --span:1;">
+                            <span>Diseño</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila: Fase 3 -->
+                <div class="gantt__row">
+                    <div class="gantt__phase-col">
+                        <strong>Fase 3</strong>
+                        <span>Desarrollo de módulos core: WODs, Reservas y Dashboard.</span>
+                    </div>
+                    <div class="gantt__track">
+                        <div class="gantt__bar gantt__bar--strong" style="--start:3; --span:2;">
+                            <span>Desarrollo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila: Fase 4 -->
+                <div class="gantt__row">
+                    <div class="gantt__phase-col">
+                        <strong>Fase 4</strong>
+                        <span>Pruebas de integración, QA y ajustes finales de usabilidad.</span>
+                    </div>
+                    <div class="gantt__track">
+                        <div class="gantt__bar gantt__bar--alt" style="--start:5; --span:1;">
+                            <span>Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fila: Fase 5 -->
+                <div class="gantt__row">
+                    <div class="gantt__phase-col">
+                        <strong>Fase 5</strong>
+                        <span>Lanzamiento oficial y capacitación técnica.</span>
+                    </div>
+                    <div class="gantt__track">
+                        <div class="gantt__bar" style="--start:6; --span:1;">
+                            <span>Lanzamiento</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="cs-block sin">
-          <div class="cs-label">Síntoma</div>
-          <div class="cs-text"><em>"A veces no sé cuándo un empleado no cumplió con el horario laboral. Pierdo mucho tiempo contando las horas trabajadas de cada empleado y su paga correspondiente de forma manual."</em></div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 11 · Próximos pasos                                   -->
+    <!-- ========================================================= -->
+    <section class="slide" id="slide-11">
+        <div class="slide__inner">
+            <header class="slide__header">
+                <span class="slide__number">11</span>
+                <h2 class="slide__title">Próximos pasos</h2>
+                <p class="slide__lead">Hitos inmediatos rumbo al lanzamiento de la versión 1.0 de Training Point.</p>
+            </header>
+
+            <ol class="next-steps">
+
+                <li class="next-step">
+                    <span class="next-step__index">01</span>
+                    <div class="next-step__body">
+                        <h3>Carga de la biblioteca base de ejercicios</h3>
+                        <p>Finalizar la carga del catálogo inicial para el primer testeo de Damián.</p>
+                    </div>
+                </li>
+
+                <li class="next-step">
+                    <span class="next-step__index">02</span>
+                    <div class="next-step__body">
+                        <h3>Simulacros de saturación de cupos</h3>
+                        <p>Validar la lógica del material físico mediante pruebas de reservas concurrentes.</p>
+                    </div>
+                </li>
+
+                <li class="next-step">
+                    <span class="next-step__index">03</span>
+                    <div class="next-step__body">
+                        <h3>Sistema de alertas automáticas</h3>
+                        <p>Implementar avisos para los abonos de los alumnos y vencimientos de membresía.</p>
+                    </div>
+                </li>
+
+                <li class="next-step">
+                    <span class="next-step__index">04</span>
+                    <div class="next-step__body">
+                        <h3>Lanzamiento del MVP</h3>
+                        <p>Lanzar la versión 1.0 para los primeros 25 alumnos del box de Damián.</p>
+                    </div>
+                </li>
+
+            </ol>
         </div>
-        <div class="cs-block cau">
-          <div class="cs-label">Causa Real</div>
-          <div class="cs-text">El control de ingreso y egreso de los empleados se realiza mediante sistemas obsoletos. Existe una dependencia, y el sector de administración no cuenta con un sistema que contabilice horas trabajadas y sueldos.</div>
+    </section>
+
+
+    <!-- ========================================================= -->
+    <!-- Slide 12 · Cierre                                           -->
+    <!-- ========================================================= -->
+    <section class="slide slide--closing" id="slide-12">
+        <div class="cover__decor cover__decor--circle cover__decor--soft"></div>
+
+        <div class="closing__content">
+            <span class="closing__eyebrow">Fin de la presentación</span>
+
+            <h2 class="closing__title">
+                Gracias.
+            </h2>
+
+            <p class="closing__subtitle">
+                Training Point · Web App de gestión integral
+            </p>
+
+            <div class="closing__divider" aria-hidden="true"></div>
+
+            <div class="closing__meta">
+                <span>Proyecto 2 · Equipo N° 6</span>
+                <span>·</span>
+                <span>7mo Informática B</span>
+                <span>·</span>
+                <span>Mayo 2026</span>
+            </div>
+
+            <p class="closing__team">
+                Bravo Tatiana &nbsp;·&nbsp; Camino Milagros &nbsp;·&nbsp; Niello Mía &nbsp;·&nbsp; Perri Nicolás &nbsp;·&nbsp; Quintana Catalina
+            </p>
         </div>
-        <div class="cs-block sol">
-          <div class="cs-label">Solución Técnica</div>
-          <div class="cs-text">Instalar un Reloj Biométrico de Control de Asistencia (iFace 302). Cada empleado se registra mediante huella o reconocimiento facial. Mediante el software, se contabilizan automáticamente las horas trabajadas y el sueldo correspondiente.</div>
-        </div>
-      </div>
 
-      <div class="cscard">
-        <div class="cs-head">
-          <div class="cs-mod">Tarjetas NFC</div>
-          <span class="cs-code">RHW03</span>
-        </div>
-        <div class="cs-block sin">
-          <div class="cs-label">Síntoma</div>
-          <div class="cs-text"><em>"Nos gustaría subir un nivel y ser más eficientes al transferir los datos a nuestros clientes."</em></div>
-        </div>
-        <div class="cs-block cau">
-          <div class="cs-label">Causa Real</div>
-          <div class="cs-text">El proceso de transferencia de datos de contacto entre los representantes de la empresa y los clientes potenciales se basa en métodos analógicos o manuales (tarjetas de papel, dictado, etc.).</div>
-        </div>
-        <div class="cs-block sol">
-          <div class="cs-label">Solución Técnica</div>
-          <div class="cs-text">Adaptar las tarjetas de papel tradicionales a tarjetas de presentación con tecnología NFC (NTAG215, 13,56 MHz, 504 bytes) que redirigen al sitio web o vCard digital al acercar un smartphone.</div>
-        </div>
-      </div>
+        <div class="cover__index">12 / 12</div>
+    </section>
 
-    </div>
-  </div>
-</section>
-
-<!-- ============ S4 SISTEMA ============ -->
-<section class="slide" id="s4">
-  <div class="inner">
-    <p class="tag">Arquitectura</p>
-    <h2 class="h2">Sistema — Hardware y Software</h2>
-    <div class="strike"></div>
-    <div class="sgrid">
-      <div class="spanel">
-        <div class="spt">Hardware</div>
-        <div class="si"><div class="sin">Servidor Web + Dominio (.com / .com.ar)</div><div class="sid">Hosting con dominio propio. Elimina correos gratuitos (Gmail/Outlook) y habilita correos corporativos.</div></div>
-        <div class="si"><div class="sin">Reloj iFace 302 — ZKTeco</div><div class="sid">Control de asistencia biométrico: lector de huella dactilar + reconocimiento facial. Conexión TCP/IP (Ethernet) o Wi-Fi integrado a la red local.</div></div>
-        <div class="si"><div class="sin">Tarjetas NFC — NTAG215</div><div class="sid">13,56 MHz · 504 bytes de memoria. Tarjetas de presentación con tecnología NFC para transferencia de datos de contacto.</div></div>
-        <div class="si"><div class="sin">PCs de escritorio + Celulares Samsung</div><div class="sid">Equipos actuales de la empresa para gestión administrativa y acceso al sistema.</div></div>
-      </div>
-      <div class="spanel">
-        <div class="spt">Software</div>
-        <div class="si"><div class="sin">Frontend — HTML5 · CSS3 · JavaScript</div><div class="sid">Diseño responsivo orientado al sector industrial. Dashboard de administración con reportes.</div></div>
-        <div class="si"><div class="sin">Backend — PHP</div><div class="sid">Gestión de lógica del sistema, CMS básico y formularios de contacto profesionales.</div></div>
-        <div class="si"><div class="sin">Base de Datos — MySQL</div><div class="sid">Almacena clientes, consultas, empleados y registros de asistencia. Cálculo de horas y sueldos vía SQL.</div></div>
-        <div class="si"><div class="sin">ZKLib — librería PHP</div><div class="sid">Comunicación por sockets con el reloj biométrico. Vuelca registros de asistencia a tablas MySQL.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S5 RF ============ -->
-<section class="slide" id="s5">
-  <div class="inner">
-    <p class="tag" style="color:var(--rust)">Requerimientos</p>
-    <h2 class="h2">Requerimientos Funcionales</h2>
-    <div class="strike" style="background:var(--rust)"></div>
-    <div class="rgrid">
-      <div class="rc"><div class="ri">RF01</div><div class="rn">Sitio Web Institucional</div><div class="rd">Mostrar información de la empresa, servicios y datos de contacto.</div><div class="rs">Origen: necesidad de mejorar imagen y distribución en el mercado</div><span class="pill pa">Prioridad Alta</span></div>
-      <div class="rc"><div class="ri">RF02</div><div class="rn">Formulario de Contacto</div><div class="rd">Permitir que potenciales clientes envíen consultas y datos.</div><div class="rs">Origen: problema en gestión de consultas</div><span class="pill pa">Prioridad Alta</span></div>
-      <div class="rc"><div class="ri">RF03</div><div class="rn">Registro Automático de Clientes</div><div class="rd">Guardar datos ingresados en formularios en una base de datos.</div><div class="rs">Origen: necesidad de organización</div><span class="pill pa">Prioridad Alta</span></div>
-      <div class="rc"><div class="ri">RF04</div><div class="rn">Registro Biométrico de Asistencia</div><div class="rd">Registrar el ingreso y egreso de los empleados con huella dactilar o reconocimiento facial.</div><div class="rs">Origen: problema en control de horarios</div><span class="pill pa">Prioridad Alta</span></div>
-      <div class="rc"><div class="ri">RF05</div><div class="rn">Alerta de Asistencia</div><div class="rd">Notificar llegadas tarde o irregularidades en el registro de asistencia.</div><div class="rs">Origen: supervisión de empleados</div><span class="pill pa">Prioridad Alta</span></div>
-      <div class="rc"><div class="ri">RF06</div><div class="rn">Respuestas Automáticas</div><div class="rd">Enviar mensajes automáticos a clientes vía WhatsApp Business, Instagram Business y Meta Business Suite con enlace al formulario.</div><div class="rs">Origen: automatización de comunicación</div><span class="pill pm">Prioridad Media</span></div>
-      <div class="rc"><div class="ri">RF07</div><div class="rn">Integración con NFC</div><div class="rd">Permitir compartir datos de contacto y redirigir al sitio web mediante tarjetas NFC NTAG215.</div><div class="rs">Origen: modernización del contacto</div><span class="pill pm">Prioridad Media</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S6 RNF + LIMITACIONES ============ -->
-<section class="slide" id="s6">
-  <div class="inner">
-    <p class="tag">Requerimientos No Funcionales</p>
-    <h2 class="h2">RNF, Hardware y Alcance</h2>
-    <div class="strike"></div>
-    <div class="dual">
-      <div class="rnf-list">
-        <div class="rnf"><div class="ri2">RNF01 — Disponibilidad</div><div class="rc2">24 / 7</div><div class="rd2">El sistema debe estar disponible las 24 horas del día, los 7 días de la semana para acceso continuo al sitio web.</div></div>
-        <div class="rnf"><div class="ri2">RNF02 · RNF03 — Usabilidad</div><div class="rc2">Multi-dispositivo y UX</div><div class="rd2">Accesible desde PC y dispositivos móviles sin instalar apps adicionales. Interfaz clara, intuitiva y fácil de usar para usuarios no técnicos.</div></div>
-        <div class="rnf"><div class="ri2">RNF04 — Seguridad</div><div class="rc2">Autenticación y protección</div><div class="rd2">El sistema debe garantizar la seguridad de los datos mediante autenticación y protección de acceso al manejar datos sensibles.</div></div>
-        <div class="rnf"><div class="ri2">RNF05 — Escalabilidad</div><div class="rc2">Crecimiento de la empresa</div><div class="rd2">El sistema debe ser escalable para soportar el crecimiento de usuarios y datos conforme se expande la empresa.</div></div>
-        <div class="rnf"><div class="ri2">RNF06 — Fiabilidad</div><div class="rc2">Respaldo y recuperación</div><div class="rd2">El sistema debe contar con mecanismo de respaldo y recuperación de datos para prevenir pérdida de información.</div></div>
-        <div class="rnf"><div class="ri2">RNF07 — Calidad</div><div class="rc2">ISO 9001</div><div class="rd2">El sistema debe cumplir con estándares de calidad acordes a la norma ISO 9001 en el proceso de certificación.</div></div>
-      </div>
-      <div class="lp">
-        <div class="lpt">Limitaciones — Qué NO hace el sistema (v1)</div>
-        <div class="li"><div class="lid">LIM01</div><div class="lt">No filtra automáticamente a todos los clientes no industriales. El sitio orienta al público objetivo pero no bloquea consultas fuera del nicho.</div><div class="lf">V. futura: filtrado estricto, evaluando riesgo de perder clientes válidos.</div></div>
-        <div class="li"><div class="lid">LIM02</div><div class="lt">No gestiona decisiones automáticas sobre asistencia (sanciones). Registra y alerta; las decisiones son humanas para evitar errores o conflictos.</div><div class="lf">V. futura: módulo de sanciones con aprobación humana.</div></div>
-        <div class="li"><div class="lid">LIM03</div><div class="lt">No integra todos los sistemas externos (Contabilidad, Finanzas, etc.). El proyecto se enfoca en web, CRM y control de asistencia.</div><div class="lf">V. futura: integraciones completas con más tiempo y recursos.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S7 OKRs ============ -->
-<section class="slide" id="s7">
-  <div class="inner">
-    <p class="tag">Objetivos y Resultados Clave</p>
-    <h2 class="h2">OKRs del Proyecto</h2>
-    <div class="strike"></div>
-    <div class="og">
-      <div class="okr">
-        <div class="oh"><span class="on">01</span><div><div class="ot">Digitalización del control de asistencia</div><div class="os">Eliminar registros en papel y mejorar el control del personal</div></div></div>
-        <div class="krs">
-          <div class="kr">KR1 — Registrar el 100% de los ingresos y egresos mediante el reloj biométrico.</div>
-          <div class="kr">KR2 — Reducir errores en el registro de asistencia a 0 (ej: horarios mal anotados).</div>
-          <div class="kr">KR3 — Disminuir el tiempo administrativo de control de asistencia.</div>
-        </div>
-      </div>
-      <div class="okr">
-        <div class="oh"><span class="on">02</span><div><div class="ot">Mejora de la imagen institucional</div><div class="os">Posicionar a la empresa en el sector industrial</div></div></div>
-        <div class="krs">
-          <div class="kr">KR1 — Nuevos contactos acceden a la información mediante sitio web o NFC.</div>
-          <div class="kr">KR2 — Tarjetas NFC funcionales en el 100% del equipo comercial.</div>
-          <div class="kr">KR3 — Sitio web publicado con 100% de secciones operativas (empresa, servicios, contacto).</div>
-          <div class="kr">KR4 — Consultas recibidas vía formulario incluyen información relevante (empresa, tipo de trabajo, contacto).</div>
-        </div>
-      </div>
-      <div class="okr">
-        <div class="oh"><span class="on">03</span><div><div class="ot">Implementación tecnológica del sistema</div><div class="os">Todos los componentes funcionando integrados y estables</div></div></div>
-        <div class="krs">
-          <div class="kr">KR1 — Sistema web, base de datos y CRM funcionando sin errores.</div>
-          <div class="kr">KR2 — Integración formulario → BD → respuestas automáticas completada con éxito.</div>
-          <div class="kr">KR3 — Sistema biométrico sincroniza correctamente los registros con MySQL.</div>
-          <div class="kr">KR4 — Redirección NFC funcional en al menos el 95% de los intentos.</div>
-        </div>
-      </div>
-      <div class="okr">
-        <div class="oh"><span class="on">04</span><div><div class="ot">Mejora en la gestión de clientes</div><div class="os">Optimizar comunicación y reducir la carga administrativa</div></div></div>
-        <div class="krs">
-          <div class="kr">KR1 — Reducir el tiempo de respuesta a consultas mediante respuestas automáticas.</div>
-          <div class="kr">KR2 — Registrar el 100% de las consultas recibidas vía formulario en la BD.</div>
-          <div class="kr">KR3 — Automatizar al menos el 80% de las respuestas iniciales a clientes mediante el CRM.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S8 PERFILES + EQUIPO ============ -->
-<section class="slide" id="s8">
-  <div class="inner">
-    <p class="tag" style="color:var(--rust)">Personas y Equipo</p>
-    <h2 class="h2">Perfiles de Usuario y Roles</h2>
-    <div class="strike" style="background:var(--rust)"></div>
-    <div class="sec">Perfiles de Usuario</div>
-    <div class="ug">
-      <div class="uc">
-        <div class="uav">SB</div>
-        <div class="un">Silvana Bravo</div>
-        <div class="ur">Administradora de la empresa</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div class="uw"><strong>Dispositivo:</strong> PC (trabajo) + celular (fuera de la oficina)</div>
-          <div class="uw"><strong>Frecuencia:</strong> Diaria</div>
-          <div class="uw"><strong>Comodidad tecnológica:</strong> Media</div>
-          <div class="uw"><strong>Acciones:</strong> Gestión de clientes, visualización de consultas, registros de asistencia</div>
-          <div class="uw"><strong>Restricción HCI:</strong> Interfaz clara, sin lenguaje técnico</div>
-        </div>
-      </div>
-      <div class="uc">
-        <div class="uav">EMP</div>
-        <div class="un">Empleados</div>
-        <div class="ur">Usuario básico</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div class="uw"><strong>Dispositivo:</strong> Reloj biométrico</div>
-          <div class="uw"><strong>Frecuencia:</strong> Diaria (marcado de asistencia)</div>
-          <div class="uw"><strong>Comodidad tecnológica:</strong> Variable</div>
-          <div class="uw"><strong>Acciones:</strong> Registrar ingreso y egreso</div>
-          <div class="uw"><strong>Restricción HCI:</strong> Uso simple, rápido y sin errores</div>
-        </div>
-      </div>
-      <div class="uc">
-        <div class="uav">TEC</div>
-        <div class="un">Técnico Instalador</div>
-        <div class="ur">Milagros Camino · Nicolás Perri</div>
-        <div style="display:flex;flex-direction:column;gap:5px">
-          <div class="uw"><strong>Cuándo actúa:</strong> Instalación inicial y mantenimiento</div>
-          <div class="uw"><strong>Herramientas:</strong> Software del reloj biométrico + servidor local</div>
-          <div class="uw"><strong>Necesidad principal:</strong> Configurar el dispositivo biométrico y conectarlo al sistema</div>
-          <div class="uw"><strong>Restricción clave:</strong> Instalación completa en ≤ 30 minutos</div>
-        </div>
-      </div>
-    </div>
-    <div class="sec">Roles del Equipo</div>
-    <div class="tg">
-      <div class="tc2"><div class="tav">MN</div><div class="tnm">Mía Niello</div><span class="tro">PM + Frontend</span><div class="tde">Gestiona Gantt, OKRs y control de cambios. Contribuye al desarrollo del frontend del sistema.</div></div>
-      <div class="tc2"><div class="tav">CQ</div><div class="tnm">Catalina Quintana</div><span class="tro">Frontend UX/UI</span><div class="tde">Diseña UX/UI y desarrolla interfaces web responsivas enfocadas en usabilidad.</div></div>
-      <div class="tc2"><div class="tav">TB</div><div class="tnm">Tatiana Bravo</div><span class="tro">Backend</span><div class="tde">Implementa lógica del sistema y APIs. Gestiona comunicación entre frontend y base de datos.</div></div>
-      <div class="tc2"><div class="tav">NP</div><div class="tnm">Nicolás Perri</div><span class="tro">DB + Backend</span><div class="tde">Diseña la base de datos, optimiza consultas SQL y apoya en desarrollo backend.</div></div>
-      <div class="tc2"><div class="tav">MC</div><div class="tnm">Milagros Camino</div><span class="tro">Infra · Seg.</span><div class="tde">Configura infraestructura, integra hardware y asegura la protección de datos.</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S9 SW + HW ============ -->
-<section class="slide" id="s9">
-  <div class="inner">
-    <p class="tag">Stack</p>
-    <h2 class="h2">Interfaz de Software y Hardware</h2>
-    <div class="strike"></div>
-    <div class="dual">
-      <div class="tp">
-        <div class="tpt">Interfaz de Software</div>
-        <div class="sw"><div class="swi">ISW01</div><div class="swn">Frontend Web — Sitio Institucional</div><div class="swt">HTML · CSS · JavaScript</div><div class="swr">Interfaz principal para usuarios. Visualiza información de la empresa y permite completar formularios de contacto.</div></div>
-        <div class="sw"><div class="swi">ISW02</div><div class="swn">Backend</div><div class="swt">PHP (o similar)</div><div class="swr">Procesa solicitudes del frontend, gestiona la lógica del sistema y conecta con la base de datos.</div></div>
-        <div class="sw"><div class="swi">ISW03</div><div class="swn">Base de Datos</div><div class="swt">MySQL</div><div class="swr">Almacena información de clientes, consultas, empleados y registros de asistencia.</div></div>
-        <div class="sw"><div class="swi">ISW04</div><div class="swn">Software del Reloj Biométrico</div><div class="swt">Software propietario del dispositivo</div><div class="swr">Registra huellas/rostros, procesa datos de asistencia y los envía al sistema central.</div></div>
-        <div class="sw"><div class="swi">ISW05</div><div class="swn">Sistema de Gestión NFC</div><div class="swt">Tecnología NFC + URL o app web</div><div class="swr">Permite transferir datos de contacto y redirigir automáticamente al sitio web.</div></div>
-      </div>
-      <div class="tp">
-        <div class="tpt">Requerimientos de Hardware</div>
-        <div class="hw"><div class="hwi">RHW01</div><div class="hwn">PCs — Gestión Administrativa</div><div class="hwd">Computadoras para gestión administrativa y acceso al sistema. Necesidad operativa diaria.</div><span class="hwp">Alta</span></div>
-        <div class="hw"><div class="hwi">RHW02</div><div class="hwn">Reloj Biométrico — iFace 302</div><div class="hwd">Lector de huella y reconocimiento facial. Soluciona el problema de control de asistencia.</div><span class="hwp">Alta</span></div>
-        <div class="hw"><div class="hwi">RHW03</div><div class="hwn">Tarjetas NFC — NTAG215</div><div class="hwd">Para transferencia de datos de contacto. Mejora la forma de comunicación con clientes.</div><span class="hwp">Alta</span></div>
-        <div class="hw"><div class="hwi">RHW04</div><div class="hwn">Conexión a Internet Estable</div><div class="hwd">El sistema depende de una conexión estable para su funcionamiento completo.</div><span class="hwp">Alta</span></div>
-        <div class="hw"><div class="hwi">RHW05</div><div class="hwn">Conexión Reloj ↔ Servidor</div><div class="hwd">El sistema debe permitir la comunicación entre el reloj biométrico y el servidor para la integración.</div><span class="hwp">Alta</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S10 GANTT ============ -->
-<section class="slide" id="s10">
-  <div class="inner">
-    <p class="tag" style="color:var(--rust)">Planificación</p>
-    <h2 class="h2">Cronograma — Diagrama de Gantt</h2>
-    <div class="strike" style="background:var(--rust)"></div>
-
-    <div class="gantt-meta">
-      <div class="gm-item"><span class="gm-lbl">Inicio</span><span class="gm-val">15 Abril 2026</span></div>
-      <div class="gm-item"><span class="gm-lbl">Fin</span><span class="gm-val">28 Noviembre 2026</span></div>
-      <div class="gm-item"><span class="gm-lbl">Duración total</span><span class="gm-val">~32 semanas</span></div>
-      <div class="gm-item"><span class="gm-lbl">Etapas</span><span class="gm-val">6 etapas · 21 tareas</span></div>
-    </div>
-
-    <div class="gantt-months">
-      <div class="gm-spacer"></div>
-      <div class="gm-row">
-        <div class="gm-cell">Abr</div>
-        <div class="gm-cell">May</div>
-        <div class="gm-cell">Jun</div>
-        <div class="gm-cell">Jul</div>
-        <div class="gm-cell">Ago</div>
-        <div class="gm-cell">Sep</div>
-        <div class="gm-cell">Oct</div>
-        <div class="gm-cell">Nov</div>
-      </div>
-    </div>
-
-    <!-- E01 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E01</span><span class="g-pname">Validación del problema</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E01.1</span><span class="g-tname">Primera entrevista</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:0%;width:1.5%" data-tiny="1"><span class="g-bar-date">15 Abr</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E01.2</span><span class="g-tname">Identificación de la problemática</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:0%;width:0.88%" data-tiny="1"><span class="g-bar-date">15–17 Abr</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E01.3</span><span class="g-tname">Análisis inicial</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:0.88%;width:6.61%"><span class="g-bar-date">17 Abr → 02 May</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E01.4</span><span class="g-tname">Definición de roles</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:3.96%;width:1.5%" data-tiny="1"><span class="g-bar-date">24 Abr</span></div></div>
-      </div>
-    </div>
-
-    <!-- E02 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E02</span><span class="g-pname">Estudio de factibilidad</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E02.1</span><span class="g-tname">Estudio de viabilidad técnica</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:0.88%;width:3.08%"><span class="g-bar-date">17–24 Abr</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E02.2</span><span class="g-tname">Análisis de gestión y tiempos</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:7.49%;width:1.5%" data-tiny="1"><span class="g-bar-date">02 May</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E02.3</span><span class="g-tname">Primera Presentación</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:9.25%;width:1.5%" data-tiny="1"><span class="g-bar-date">06 May</span></div></div>
-      </div>
-    </div>
-
-    <!-- E03 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E03</span><span class="g-pname">Diseño del sistema</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E03.1</span><span class="g-tname">Viabilidad técnica</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:3.96%;width:9.69%"><span class="g-bar-date">24 Abr → 16 May</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E03.2</span><span class="g-tname">Viabilidad económica</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:13.66%;width:3.08%"><span class="g-bar-date">16–23 May</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E03.3</span><span class="g-tname">Análisis de riesgos</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:13.66%;width:6.17%"><span class="g-bar-date">16–30 May</span></div></div>
-      </div>
-    </div>
-
-    <!-- E04 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E04</span><span class="g-pname">Prototipo HCI</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E04.1</span><span class="g-tname">Diseño de base de datos</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:19.82%;width:12.33%"><span class="g-bar-date">30 May → 27 Jun</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E04.2</span><span class="g-tname">Diseño de red</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:19.82%;width:15.42%"><span class="g-bar-date">30 May → 04 Jul</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E04.3</span><span class="g-tname">Diseño de interfaces (HCI)</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:25.99%;width:18.50%"><span class="g-bar-date">13 Jun → 25 Jul</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E04.4</span><span class="g-tname">Diseño de Mockups</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:47.58%;width:12.33%"><span class="g-bar-date">01 Ago → 29 Ago</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E04.5</span><span class="g-tname">Pruebas de usuario</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:59.91%;width:9.25%"><span class="g-bar-date">29 Ago → 19 Sep</span></div></div>
-      </div>
-    </div>
-
-    <!-- E05 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E05</span><span class="g-pname">Desarrollo</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E05.1</span><span class="g-tname">Codificación Backend y Frontend</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:63.00%;width:18.50%"><span class="g-bar-date">05 Sep → 17 Oct</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E05.2</span><span class="g-tname">Integración HW + SW</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:81.50%;width:6.17%"><span class="g-bar-date">17–31 Oct</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E05.3</span><span class="g-tname">Documentación de procesos</span></div>
-        <div class="g-track"><div class="g-bar g-amber" style="left:87.67%;width:3.08%"><span class="g-bar-date">31 Oct → 07 Nov</span></div></div>
-      </div>
-    </div>
-
-    <!-- E06 -->
-    <div class="g-phase">
-      <div class="g-phase-head"><span class="g-pid">E06</span><span class="g-pname">Presentación final</span></div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E06.1</span><span class="g-tname">Últimos detalles</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:93.83%;width:1.5%" data-tiny="1"><span class="g-bar-date">14 Nov</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E06.2</span><span class="g-tname">Capacitación de usuarios</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:96.92%;width:1.5%" data-tiny="1"><span class="g-bar-date">21 Nov</span></div></div>
-      </div>
-      <div class="g-row">
-        <div class="g-tlabel"><span class="g-tid">E06.3</span><span class="g-tname">Defensa final del proyecto</span></div>
-        <div class="g-track"><div class="g-bar g-rust" style="left:98.5%;width:1.5%" data-tiny="1"><span class="g-bar-date">28 Nov</span></div></div>
-      </div>
-    </div>
-
-    <div class="g-legend">
-      <div class="g-leg-item"><span class="g-leg-bar" style="background:linear-gradient(135deg,var(--amber),var(--amber2))"></span>Etapas impares (E01, E03, E05)</div>
-      <div class="g-leg-item"><span class="g-leg-bar" style="background:linear-gradient(135deg,var(--rust),var(--amber))"></span>Etapas pares (E02, E04, E06)</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ============ S11 PRÓXIMOS PASOS ============ -->
-<section class="slide" id="s11">
-  <div class="inner">
-    <p class="tag">Hoja de Ruta</p>
-    <h2 class="h2">Próximos Pasos</h2>
-    <div class="strike"></div>
-    <div class="sg">
-      <div class="st2"><div class="sn">1</div><div class="sti">Segunda reunión</div><div class="sde">Profundizar en los problemas detectados. Analizar cómo gestionan actualmente clientes y empleados. Relevar herramientas utilizadas y confirmar tipo de consultas y uso de registros.</div><div class="sdu">Duración estimada: 45–60 minutos</div></div>
-      <div class="st2"><div class="sn">2</div><div class="sti">Relevamiento técnico del entorno</div><div class="sde">Analizar el espacio físico para el reloj biométrico. Verificar conexión a internet, ubicación de dispositivos y condiciones de uso. Definir dónde implementar cada componente del sistema.</div><div class="sdu">Visita al sitio físico</div></div>
-      <div class="st2"><div class="sn">3</div><div class="sti">Prueba del sistema biométrico</div><div class="sde">Configurar el iFace 302 y verificar: registro de huella y/o rostro, correcto guardado de datos, funcionamiento de ingresos y egresos. Instalación en ≤ 30 minutos.</div><div class="sdu">Testing inicial</div></div>
-      <div class="st2"><div class="sn">4</div><div class="sti">Desarrollo inicial del sitio web</div><div class="sde">Crear primera versión del sitio institucional con: información de la empresa, sección de servicios y formulario de contacto estructurado.</div><div class="sdu">Sprint 1</div></div>
-      <div class="st2"><div class="sn">5</div><div class="sti">Integración de base de datos y CRM</div><div class="sde">Conectar el formulario con la base de datos. Configurar almacenamiento de clientes y envío de respuestas automáticas vía WhatsApp Business e Instagram.</div><div class="sdu">Sprint 2</div></div>
-      <div class="st2"><div class="sn">6</div><div class="sti">Prueba de integración y validación</div><div class="sde">Verificar que funcionen juntos: Web + Formulario + BD + CRM + Reloj biométrico. Mostrar el sistema funcionando y realizar ajustes antes de la versión final.</div><div class="sdu">Entrega y validación final</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ S12 CARÁTULA REPETIDA ============ -->
-<section class="slide" id="s12">
-  <div class="inner">
-    <div class="eyebrow"><span></span><p class="tag">Primera Presentación de Proyecto · TADIN</p></div>
-    <h1 class="h1">Proyecto 1<br><em>TADIN</em></h1>
-    <p class="sub">Digitalización de procesos para una empresa de pintura electrostática.</p>
-    <div class="meta-row">
-      <div><div class="ml">Equipo</div><div class="mv">N° 6</div></div>
-      <div><div class="ml">Curso</div><div class="mv">7mo Informática B</div></div>
-      <div><div class="ml">Fecha</div><div class="mv">Mayo 2026</div></div>
-    </div>
-    <div class="team">
-      <div class="tm"><div class="av">MN</div><div><div class="tn">Mía Niello</div><div class="tr">PM / Frontend</div></div></div>
-      <div class="tm"><div class="av">CQ</div><div><div class="tn">Catalina Quintana</div><div class="tr">Frontend · UX/UI</div></div></div>
-      <div class="tm"><div class="av">TB</div><div><div class="tn">Tatiana Bravo</div><div class="tr">Backend</div></div></div>
-      <div class="tm"><div class="av">NP</div><div><div class="tn">Nicolás Perri</div><div class="tr">DB · Backend</div></div></div>
-      <div class="tm"><div class="av">MC</div><div><div class="tn">Milagros Camino</div><div class="tr">Infraestructura · Seguridad</div></div></div>
-    </div>
-  </div>
-</section>
-
-<nav class="nav">
-  <button class="nbtn" id="prev"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
-  <div class="dots" id="dots"></div>
-  <span class="ncount" id="cnt">1 / 12</span>
-  <button class="nbtn" id="next"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
-</nav>
-</div>
-
-<script>
-(function(){
-  const slides=document.querySelectorAll('.slide');
-  const cnt=document.getElementById('cnt');
-  const dotsEl=document.getElementById('dots');
-  const N=slides.length;
-  let cur=0,busy=false;
-  slides.forEach((_,i)=>{
-    const d=document.createElement('div');
-    d.className='dot'+(i===0?' on':'');
-    d.onclick=()=>go(i);
-    dotsEl.appendChild(d);
-  });
-  function go(to){
-    if(busy||to===cur||to<0||to>=N)return;
-    busy=true;
-    const from=slides[cur],dest=slides[to];
-    dest.style.cssText='transition:none;opacity:0;transform:translateX('+(to>cur?40:-40)+'px)';
-    dest.classList.add('active');
-    requestAnimationFrame(()=>requestAnimationFrame(()=>{
-      dest.style.cssText='';
-      from.classList.add('out');
-      setTimeout(()=>{
-        from.classList.remove('active','out');
-        dest.style.cssText='';
-        busy=false;
-      },530);
-    }));
-    cur=to;
-    cnt.textContent=(cur+1)+' / '+N;
-    document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===cur));
-  }
-  document.getElementById('next').onclick=()=>go(cur+1);
-  document.getElementById('prev').onclick=()=>go(cur-1);
-  document.addEventListener('keydown',e=>{
-    if(e.key==='ArrowRight'||e.key==='ArrowDown')go(cur+1);
-    if(e.key==='ArrowLeft'||e.key==='ArrowUp')go(cur-1);
-    if(e.key==='f'||e.key==='F')document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.();
-  });
-  let sx=0;
-  document.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});
-  document.addEventListener('touchend',e=>{
-    const dx=e.changedTouches[0].clientX-sx;
-    if(Math.abs(dx)>45)go(dx<0?cur+1:cur-1);
-  },{passive:true});
-})();
-</script>
 </body>
 </html>
